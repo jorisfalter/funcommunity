@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0c040;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section#join {
+    margin: 20px 0;
+}
+
+form#signup-form input, form#signup-form button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form#signup-form button {
+    background-color: #7b1fa2;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #009688;
+    color: #fff;
+}
+
+#social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#social-media-links a:hover {
+    text-decoration: underline;
+}
