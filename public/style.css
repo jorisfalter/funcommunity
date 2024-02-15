@@ -17,6 +17,18 @@ section#join {
     margin: 20px 0;
 }
 
+section#social-proof {
+    margin: 20px 0;
+    background-color: blue;
+    padding:20px;
+    color:white;
+    max-width: 600px;
+    margin:auto;}
+
+li{
+    text-align: left
+}
+
 form#signup-form input, form#signup-form button {
     padding: 10px;
     margin: 5px;
