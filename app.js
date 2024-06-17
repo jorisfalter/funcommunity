@@ -7,6 +7,11 @@ const port = 3000;
 // Serve static files from the 'public' folder
 app.use(express.static("public"));
 
+// Serve index2.html as the homepage > this doesn't seem to work
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
