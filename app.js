@@ -10,6 +10,8 @@ app.use(express.static("public"));
 // Serve index2.html as the homepage > this doesn't seem to work
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
+  console.log("Serving file:", filePath);
+  res.sendFile(filePath);
 });
 
 // Parse application/x-www-form-urlencoded
