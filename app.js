@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require("path");
 
 const app = express();
 const port = 3000;
@@ -7,9 +8,10 @@ const port = 3000;
 // Serve static files from the 'public' folder
 app.use(express.static("public"));
 
-// Serve index2.html as the homepage > this doesn't seem to work
+// Serve index2.html as the homepage > it always takes index.html if index.html is there!
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  // res.sendFile(path.join(__dirname, "public", "index3.html"));
+  const filePath = path.join(__dirname, "public", "index3.html");
   console.log("Serving file:", filePath);
   res.sendFile(filePath);
 });
